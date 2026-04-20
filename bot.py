@@ -1,5 +1,8 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.constants import ChatAction
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = "123456789:abc"
 from telegram.ext import (
     Application,
     CommandHandler,
